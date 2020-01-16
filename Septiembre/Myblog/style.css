@@ -1,0 +1,64 @@
+
+body{
+    font-family: "Raleway", sans-serif;
+}
+
+header{
+    text-align: center;
+}
+
+h1{
+    font-size:36px;
+}
+
+.card, .asidecard, .asidecard2{
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+    margin:16px;
+}
+
+
+.card img, .asidecard img{
+    width:100%;
+}
+
+
+.card-text, .aboutme-text, .popularposts{
+    padding:16px;
+    color:black;
+}
+
+section{
+    width:70%
+}
+
+aside{
+    width:30%;
+}
+
+main{
+    display:flex;
+}
+
+.asidecard2 div img{
+    width:50px;
+    margin:5px;
+}
+
+.asidecard2 {
+    display:flex;
+    flex-direction: column;
+}
+
+.asidecard2 div{
+    display:flex;
+    border-bottom: 1px solid lightgray;
+}   
+
+.asidecard2 div:hover{
+background-color: lightgrey;
+}
+
+.popularposts{
+    background-color: grey;
+}
+

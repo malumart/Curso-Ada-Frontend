@@ -1,0 +1,21 @@
+.header{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:darkgray;
+    height: 70px;
+    color: #ffffff;
+    padding-top: 20px;
+    padding-left: 50px;
+    
+}
+
+
+.item{
+    display: inline-block;
+    margin-right:30px;
+}
+
+.titulo{
+    display: inline-block;
+    margin-right: 300px;
+    padding: 5px;
+}

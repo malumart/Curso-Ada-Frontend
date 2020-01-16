@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body{
+  text-align:center;
+  margin:0;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.header {
+  width: 100%;
+  height:100px;
+  background-color:#343a40;
+  position:fixed;
+}
+
+#menu {
+  position: absolute;
+  right:10px;
+  top:20px;
+}
+
+h2{
+  font-size: 25px;
+  padding-top:10px;
+  padding-bottom:10px;
+  position: absolute;
+  left:20px;
+}
+
+p{
+  margin-right:30px;
+  display: inline-block;
+}
+
+#principal {
+  background-color: #1abc9c;
+}
+
+#imgprincipal{
+  width:200px;
+  height:200px;
+  padding-top:150px;
+  margin-bottom:10px;
+}
+
+h1{
+  font-size: 60px;
+  margin-bottom:10px;
+  margin-top:0;
+}
+
+h3{
+  font-size: 20px;
+  margin-top:10px;
+  padding-bottom:100px;
+}
+
+#portfolio, #contact{
+  background-color: #ffffff;
+  color:#000000;
+  padding:40px;
+}
+
+.imgportfolio{
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  text-align:center;
+  align-items:center;
+}
+
+#portfolio img{
+  width: 300px;
+  margin:20px;
+  border-radius: 5%;
+  margin:10px;
+}
+
+#portfolio hr, #contact hr{
+  height: 5px;
+  width: 15%;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.about{
+  background-color: #1abc9c;
+  color:#ffffff;
+  padding: 40px;
+}
+
+.about hr{
+  height: 5px;
+  width: 15%;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.about-text{
+  width: 300px;
+  display:inline-block;
+  text-align: left;
+  padding: 30px;
+}
+
+a{ 
+  color: #ffffff; 
+  text-decoration: none;
+}
+
+#contact p
+{
+  padding-left:100px;
+  padding-right: 100px; 
+  text-align: left;
+}
+
+input[type=text], input[type=email], input[type=number], textarea{
+  border: none;
+  border-bottom: 1px solid lightslategray;
+  width:500px;
+  height:25px;
+  display:block;
+  padding: 3px;
+}
+
+input[type=submit]{
+  background-color: #1abc9c;
+  border-radius: 5px;
+  height:40px;
+  width:70px;
+  color: white;
+  margin-top: 20px;
+}
+
+textarea{
+  resize: none;
+  height: 80px;
+}
+
+@media (max-width: 660px){
+  .header{
+    background-color:darkkhaki;
+  }
+  
+}
+
+@media (min-width:601px) and (max-width: 800px){
+  .header{
+    background-color:lightcoral;
+  }
+}
+

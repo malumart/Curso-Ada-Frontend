@@ -1,0 +1,15 @@
+{
+  "name": "clase-52",
+  "version": "1.0.0",
+  "description": "",
+  "main": "clase52.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,39 @@
+section{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.img-container{
+    display: flex;
+}
+
+.imagen{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    width:200px;
+    height: 200px;
+    background-image:url("http://placekitten.com/500");
+    background-position: center;
+    background-size:cover;
+    margin:20px;
+    border-radius: 50%;
+    overflow:hidden;
+}
+
+.imagen:hover .overlay{
+    transform: translateY(0); 
+} 
+
+.overlay{
+    height:100%;
+    width:100%;
+    background-color: rgba(0,0,255,0.5);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    transition: transform 1s;
+    transform: translateY(200px);
+}

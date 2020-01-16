@@ -1,0 +1,22 @@
+h1{
+    color:pink;
+    background-color:darkgray;
+}
+
+p{
+    color:palevioletred;
+    font-weight: bold;
+}
+
+.verde{
+    color:green;
+}
+
+#titulo{
+    color:orange;
+}
+
+span{
+    background-color:lavenderblush;
+    font-weight:bold;
+}
