@@ -3,7 +3,8 @@
 
 ```"Introduccion al DOM. Que es el dom. 
 Como seleccionar elementos: por id, clase, etiqueta, query selector. 
-Como ver y editar lista de clases: classList y las propiedades add, remove y toggle. La propiedad innerHTML. 
+Como ver y editar lista de clases: classList y las propiedades add, remove y toggle. 
+La propiedad innerHTML. 
 
 Teoria: https://github.com/malerey/Clase-60-DOM
 
