@@ -62,4 +62,8 @@ Profesora: Malena Rey
 ```
 - Javascript. Objetos. (Clase: 58)
 - Javascript (Clase: 59)
+- DOM (Clases : 60, 61, 62, 63, 64 y 65)
+- Javascript: Eventos (Clase 61)
+- Repaso formularios: (Clase 65)
+- EJERCICIO : Hacer web completa con DOM (Clase 64,65 y 66)
 ```
