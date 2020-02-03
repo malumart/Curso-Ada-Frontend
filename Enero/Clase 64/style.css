@@ -1,0 +1,172 @@
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #efeef1;
+    text-align: center;
+}
+
+
+nav {
+  background-color: #2e0152;
+ 
+  width: 100%;
+  height: 50px;
+  color: white; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav div{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#section-1{
+
+    display:flex;
+    justify-content: center;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.card-section-1{
+    width: 90%;
+    height: 400px;
+    margin: 10px 20px;
+    display: flex;
+    background-color: #6504b5;
+}
+
+.text-section-1{
+    width: 50%;
+    padding: 20px;
+    color: #ddb4ff;
+}
+
+.img-section-1 img{
+        width:auto;
+        height: 400px;
+}
+
+#formulariofiltro{
+    width: 100%;
+    background-color: #6504b5;
+    padding:20px;
+    color: white; 
+    
+}
+
+label {
+    display: block;
+    padding-left: 15px;
+  }
+
+#formcolor, #formsexo{
+    display:flex;
+    flex-direction: column;
+}
+
+form {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#section-adoptions{
+    display:flex;
+    position:relative;
+}
+
+
+
+#cards-adoptions{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+
+
+
+
+.card{
+    width:45%;
+    height: 150px;
+    margin: 10px;
+    display:flex;
+    font-size: 12px;
+    background-color: #6504b5;
+    transition: all 1s
+}
+
+
+.cardimg{
+    overflow: hidden;
+    width: 50%
+}
+
+.cardimg img {
+    height: 100%;
+    transition: all 1s
+  }
+    
+.card:hover {
+    background-color: #ddb4ff;
+    color: #000;
+}   
+    
+.card:hover img{
+        transform: scale(2)
+}
+
+.carddesc {
+    padding: 0px 10px;
+    text-align: left;
+    color: white; 
+}
+
+.carddesc button {
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-top:10px;
+}
+
+.nomostrar{
+    display:none;
+}
+
+#contenedorModal{
+    width: 300px;
+    height:200px;
+    position:absolute;
+    top:100px;
+    left:500px;
+}
+
+.modalcontent img{
+    width:400px;
+    height:400px;
+    z-index: 999;
+}
+
+footer{
+    background-color: #6504b5;
+    color: #ddb4ff;
+    width: 100%;
+    height: 80px;
+    padding-top:20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

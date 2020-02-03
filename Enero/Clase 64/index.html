@@ -6,15 +6,84 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Clase 64</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     
-    <header></header>
+    <nav>
+        
+        <div><p>#AdoptAdas</p></div>
+        <div><i class="fa fa-bars"></i></div>
+        
+    </nav>
 
-    <section></section>
+    <section id="section-1">
+        <div class="card-section-1">
+            <div class="text-section-1"> 
+                <h1>Adopta un gatito</h1>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, at.</h4>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolorum facere aliquid molestias quos voluptatum nesciunt dolor numquam ab beatae, modi voluptate, alias error qui sequi aliquam enim, cum repellendus perspiciatis debitis aspernatur vitae necessitatibus sit illum! Veritatis aperiam unde ratione sint adipisci dicta aspernatur, id ea iste animi odit ab quia. </p>
+            </div>
+            
+            <div class="img-section-1"> <img src="img/catlooking.jpg"></div>   
+        </div>
+
+    <div id='formulariofiltro'>
+
+        <form action="adoptar_gato.html" name="filtrosgato" method="get" enctype="application/x-www-form-urlencoded">
+        <div id="formcolor">
+        <label><input type="checkbox" name="color" value="Negro"> Negro</label>
+        <label> <input type="checkbox" name="color" value="Gris"> Gris </label>
+        <label><input type="checkbox" name="color" value="Blanco"> Blanco </label>
+        <label><input type="checkbox" name="color" value="Atigrado"> Atigrado </label>
+        <label><input type="checkbox" name="color" value="Naranja"> Naranja </label>
+        </div>
+        <div id="formsexo">
+            <label><input type="radio" name="sexo" value="h"> Hembra</label>
+            <label><input type="radio" name="sexo" value="m"> Macho </label>
+            <label><input type="radio" name="sexo" value="i"> Indistinto </label>
+        
+        </div>
+
+        <div><input type="text" name="Nombre" placeholder="Nombre"></div>
+        <div><input type="text" name="Telefono" placeholder="Telefono"></div>
 
 
-    <footer></footer>
+        <div><input type="submit" value ="Filtrar"></div>
+        </form>
+
+    </div>
+    
+    </section>
+
+    
+
+    <section id="section-adoptions">
+
+        <div id="contenedorModal">
+            <div></div>
+        </div>
+
+        <div id="cards-adoptions">
+
+        </div>
+
+
+    </section>
+
+    
+
+
+    <footer>
+        <div class="icons">
+        <i class="fa fa-facebook-f"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        </div>
+
+        <div> <p> 2020 - All Rights Reserved</p> </div>
+    </footer>
 
     <script src="main.js"></script>
 </body>
