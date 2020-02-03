@@ -42,3 +42,16 @@ inputUsername.oninput = (e) =>{
 
 
 
+const select = document.querySelector('select');
+
+select.onchange = () =>{
+    const index = select.selectedIndex;
+    const valor = select.options[index].value;
+    if (valor != "ar"){
+        const aviso = document.getElementById("aviso");
+        aviso.classList.add("rojo")
+        aviso.innerHTML = `<p>Ojo con la afip</p>`
+    }
+}
+
+

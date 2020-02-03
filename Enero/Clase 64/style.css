@@ -108,12 +108,15 @@ form {
 
 .cardimg{
     overflow: hidden;
-    width: 50%
+    width: 60%;
+    position: relative;
 }
 
 .cardimg img {
     height: 100%;
-    transition: all 1s
+    transition: all 1s;
+    position: absolute;
+    right: -20px;
   }
     
 .card:hover {
