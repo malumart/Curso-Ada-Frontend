@@ -57,13 +57,14 @@ Profesora: Malena Rey
 
 >23/12/2019 al 03/01/2020
 
-## Clases de Enero: 58 a ...
+## Clases de Enero: 58 a 69
 >Temas:
 ```
 - Javascript. Objetos. (Clase: 58)
 - Javascript (Clase: 59)
 - DOM (Clases : 60, 61, 62, 63, 64 y 65)
 - Javascript: Eventos (Clase 61)
-- Repaso formularios: (Clase 65)
+- Formularios: (Clase 65,67, 68)
 - EJERCICIO : Hacer web completa con DOM (Clase 64,65 y 66)
+- Metodos de Array : (Clase 69)
 ```
