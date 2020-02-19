@@ -51,7 +51,6 @@ const viewProducts = () => {
 
 window.onload = () => viewProducts();
 
-
 formulario.onsubmit = e => {
 	e.preventDefault();
 
@@ -64,4 +63,3 @@ formulario.onsubmit = e => {
 
 	cardsproductos.innerHTML = listaProductos;
 };
-
