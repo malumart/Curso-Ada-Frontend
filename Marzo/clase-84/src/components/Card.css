@@ -1,0 +1,68 @@
+body {
+	background: #e3e3d8;
+	padding: 25px;
+}
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card {
+	width: 300px;
+	height: 500px;
+	background: white;
+	margin: auto;
+	border-radius: 10px 10px 10px 10px;
+	transform: scale(0.95);
+	transition: box-shadow 0.5s, transform 0.5s;
+}
+
+.card:hover {
+	transform: scale(1);
+	box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card .top {
+	display: flex;
+	align-items: center;
+	height: 80%;
+}
+
+.card .top img {
+	height: auto;
+	width: 100%;
+}
+
+.card .bottom {
+	display: flex;
+}
+
+.card .bottom .details {
+	flex: 2;
+	padding: 0 20px;
+}
+
+.card .bottom .shipping {
+	flex: 1;
+}
+
+.card .bottom h5 {
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+.card .bottom p {
+	margin: 0;
+}
+
+.card .bottom .shipping {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card .bottom .shipping img {
+	width: 50%;
+	height: auto;
+}
