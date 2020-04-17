@@ -1,83 +1,117 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import TarjetasGatitos from "./components/TarjetasGatitos";
-import rodolfo from "./img/gatanegroyblanco.jpg";
-import muzzarella from "./img/gatagris.jpg";
-import artilugia from "./img/gatonaranja.jpg";
-import wosito from "./img/gatoatigrado.jpg";
-import calamardo from "./img/gatatricolor.jpg";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import gatos from "./assets/gatos";
 
-const gatos = [
-	{
-		name: "Rodolfo",
-		shortDesc:
-			"Tiene 4 años, le gusta perseguir mariposas, se lleva bien con niños y con otros gatos.",
-		longDesc:
-			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit libero dolorum aliquam error expedita distinctio porro ducimus ex repellendus laboriosam. Sequi, doloribus autem? Unde commodi assumenda consequatur ratione numquam distinctio nihil blanditiis quae debitis sed eligendi modi architecto omnis aspernatur officia molestiae, vero nemo a quibusdam? Voluptatum eveniet blanditiis impedit.",
-		img: rodolfo,
-		color: ["negro", "blanco"],
-		sexo: "h",
-		disponible: false
-	},
+const App = () => {
+	const [gatosFiltrados, setGatosFiltrados] = useState([...gatos]);
+	const [state, setState] = useState({
+		color: [],
+		sexo: "",
+		nombre: "",
+		edad: "",
+	});
 
-	{
-		name: "Muzzarella",
-		shortDesc:
-			"Muy dulce y mimosa. Tiene seis dedos en una pata que asegura le dan superpoderes.",
-		longDesc:
-			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit libero dolorum aliquam error expedita distinctio porro ducimus ex repellendus laboriosam. Sequi, doloribus autem? Unde commodi assumenda consequatur ratione numquam distinctio nihil blanditiis quae debitis sed eligendi modi architecto omnis aspernatur officia molestiae, vero nemo a quibusdam? Voluptatum eveniet blanditiis impedit.",
-		img: muzzarella,
-		color: ["gris"],
-		sexo: "h",
-		disponible: true
-	},
+	const handleChange = (e) => {
+		if (e.target.name === "color") {
+			setState({ ...state, color: [...state.color, e.target.value] });
+		} else {
+			setState({ ...state, [e.target.name]: e.target.value });
+		}
 
-	{
-		name: "Artilugia",
-		shortDesc:
-			"Muy activa y juguetona. Se lleva bien con perros. Ideal para casa con jardin amplio",
-		longDesc:
-			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit libero dolorum aliquam error expedita distinctio porro ducimus ex repellendus laboriosam. Sequi, doloribus autem? Unde commodi assumenda consequatur ratione numquam distinctio nihil blanditiis quae debitis sed eligendi modi architecto omnis aspernatur officia molestiae, vero nemo a quibusdam? Voluptatum eveniet blanditiis impedit.",
-		img: artilugia,
-		color: ["naranja"],
-		sexo: "m",
-		disponible: true
-	},
+		if (e.target.name === "sexo") {
+			setGatosFiltrados(gatos.filter((gato) => gato.sexo === e.target.value));
+		}
+	};
 
-	{
-		name: "Wosito",
-		shortDesc:
-			"Vivio toda su vida en la calle y todavia se asombra de cosas como estufas y escaleras.",
-		longDesc:
-			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit libero dolorum aliquam error expedita distinctio porro ducimus ex repellendus laboriosam. Sequi, doloribus autem? Unde commodi assumenda consequatur ratione numquam distinctio nihil blanditiis quae debitis sed eligendi modi architecto omnis aspernatur officia molestiae, vero nemo a quibusdam? Voluptatum eveniet blanditiis impedit.",
-		img: wosito,
-		color: ["atigrado"],
-		sexo: "m",
-		disponible: true
-	},
+	console.log(state);
 
-	{
-		name: "Calamardo",
-		shortDesc:
-			"Dicen que de noche, cuando nadie lo puede escuchar, invoca a Cthulu. Muy mimoso.",
-		longDesc:
-			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit libero dolorum aliquam error expedita distinctio porro ducimus ex repellendus laboriosam. Sequi, doloribus autem? Unde commodi assumenda consequatur ratione numquam distinctio nihil blanditiis quae debitis sed eligendi modi architecto omnis aspernatur officia molestiae, vero nemo a quibusdam? Voluptatum eveniet blanditiis impedit.",
-		img: calamardo,
-		color: ["naranja", "blanco", "negro"],
-		sexo: "h",
-		disponible: true
-	}
-];
-
-function App() {
 	return (
 		<div>
 			<NavBar />
+			<form>
+				<div>
+					Negre
+					<input
+						onChange={handleChange}
+						type="checkbox"
+						value="negro"
+						name="color"
+					/>
+					Blanco
+					<input
+						onChange={handleChange}
+						type="checkbox"
+						value="blanco"
+						name="color"
+					/>
+					Naranja{" "}
+					<input
+						onChange={handleChange}
+						type="checkbox"
+						value="naranja"
+						name="color"
+					/>
+					Tricolor{" "}
+					<input
+						onChange={handleChange}
+						type="checkbox"
+						value="tricolor"
+						name="color"
+					/>
+					Rayade{" "}
+					<input
+						onChange={handleChange}
+						type="checkbox"
+						value="rayado"
+						name="color"
+					/>
+				</div>
+				<div>
+					Masculino
+					<input
+						onChange={handleChange}
+						type="radio"
+						value="m"
+						name="sexo"
+					></input>
+					Femenino
+					<input
+						onChange={handleChange}
+						type="radio"
+						value="f"
+						name="sexo"
+					></input>
+					Indiferente
+					<input
+						onChange={handleChange}
+						type="radio"
+						value="indiferente"
+						name="sexo"
+					></input>
+				</div>
+				<div>
+					Nombre
+					<input
+						onChange={handleChange}
+						type="text"
+						name="nombre"
+						value={state.nombre}
+					></input>
+					Edad
+					<input
+						onChange={handleChange}
+						type="number"
+						name="edad"
+						value={state.edad}
+					></input>
+				</div>
+			</form>
 			<div className="section-adoptions">
 				<div className="cards-adoptions">
-					{gatos.map((gato, i) => (
+					{gatosFiltrados.map((gato, i) => (
 						<TarjetasGatitos key={i} info={gato} />
 					))}
 				</div>
@@ -86,6 +120,6 @@ function App() {
 			<Footer />
 		</div>
 	);
-}
+};
 
 export default App;
